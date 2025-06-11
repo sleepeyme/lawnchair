@@ -482,3 +482,17 @@ licensee {
 
     bundleAndroidAsset = true
 }
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.github.farmerbb:libtaskbar:2.2.0' // see badge above for latest version
+}
